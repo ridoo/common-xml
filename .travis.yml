@@ -1,3 +1,9 @@
 language: java
 jdk:
   - openjdk7
+before_script:
+ - "echo $JAVA_OPTS"
+script: mvn -fae -U -B clean install -P check
+env:
+  global:
+    JAVA_OPTS=-Xmx2g
