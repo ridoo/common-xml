@@ -28,7 +28,7 @@
         <developerConnection>scm:git:git@github.com:52North/common-xml.git</developerConnection>
         <url>https://github.com/52North/common-xml</url>
         <tag>HEAD</tag>
-  </scm>
+    </scm>
 
 
     <licenses>
@@ -623,6 +623,7 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.6.1</version>
                     <configuration>
+                        <fork>true</fork>
                         <compilerArgument>-Xlint:all</compilerArgument>
                         <showWarnings>true</showWarnings>
                         <meminitial>1g</meminitial>
