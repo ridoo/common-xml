@@ -3,4 +3,7 @@ jdk:
   - openjdk7
 before_script:
  - "echo $JAVA_OPTS"
- - "export JAVA_OPTS=-Xmx512m"
+script: mvn -fae -U -B clean install -P check
+env:
+  global:
+    JAVA_OPTS=-Xmx2g
